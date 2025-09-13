@@ -14,7 +14,7 @@ os.environ['SSL_CERT_FILE'] = certifi.where()
 BASE_DIR = Path(__file__).resolve().parent.parent
 CSRF_TRUSTED_ORIGINS = [
     "https://web-production-7bca.up.railway.app",
-    "https://www.internationals-fundcorp.it.com"
+    "https://www.ihsb.online"
 ]
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -198,13 +198,10 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 
-
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.zeptomail.com"
+EMAIL_HOST = "smtp.zoho.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "emailapikey"
-EMAIL_HOST_PASSWORD = "wSsVR61+8xD2Wq11yDD/IOtpmlsBU1jzEkx+3gahvSP7TKjC8scznhXLVASiT6BLFzRpFWNG9eohmh1ShjoGjYl+nFwBCSiF9mqRe1U4J3x17qnvhDzIX25UlBKALYkOxg1inWlhF8Bu"
-DEFAULT_FROM_EMAIL = "noreply@internationals-fundcorp.it.com"
-
-#16EED49A67567D2D6AB08383F09A78F3ADC7
+EMAIL_HOST_USER = "support@internationals-fundcorp.it.com"
+EMAIL_HOST_PASSWORD = "Support51a511$$"  # or App Password if you create one
+DEFAULT_FROM_EMAIL = "support@internationals-fundcorp.it.com"
